@@ -1,0 +1,59 @@
+@import "../utils/mixins";
+* {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+button{
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+.justify{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.justifycol{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.mulish, .mulish *{
+    font-family: "Mulish", sans-serif;
+}
+
+.opensans,.opensans *{
+    font-family: "Open Sans", sans-serif;
+}
+button{
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.pink{
+    color: var(--highlight-color);
+}
+a{
+    text-decoration: none;
+}
+.stretch{
+    align-items: stretch;
+}
+
+::-webkit-scrollbar{
+    display: none;
+}

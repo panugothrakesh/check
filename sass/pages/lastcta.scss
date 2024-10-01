@@ -1,0 +1,37 @@
+.lastcta{
+    background-color: $secondary-pink;
+    color: white;
+    padding: 6.4rem 0;
+    @include respond(tab){
+        padding: 9rem 1.8rem;
+    }
+    h1{
+        font-size: 4.8rem;
+        font-weight: 600;
+        text-align: center;
+        @include respond(tab){
+            font-size: 3.6rem;
+        }
+    }
+    p{
+        margin-top: 3rem;
+        text-align: center;
+        font-size: 2rem;
+        line-height: 3.26rem;
+        @include respond(tab){
+            font-size: 1.6rem;
+            line-height: 2.6rem;
+        }
+    }
+    .lcta{
+        border-radius: .4rem;
+        padding: 1.6rem 1.6rem ;
+        border: 2px solid $border-color;
+        margin-top: 3rem;
+        font-size: 2rem;
+        @include respond(tab){
+            width: 80%;
+            font-size: 1.6rem;
+        }
+    }
+}

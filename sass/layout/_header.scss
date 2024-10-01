@@ -1,0 +1,71 @@
+header, .Navbar{
+    padding: 1.5rem 0;
+    flex-direction: column;
+    @include respond(tab){
+        padding: 2.5rem 2.1rem;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    img {
+        @include respond(tab){
+            width: 3.3rem;
+        }
+    }
+    nav{
+        .burger{
+            display: none;
+            @include respond(tab){
+                display: block;
+                visibility: visible;
+                box-sizing: border-box;
+                width: 3.6em;
+                padding: .8em;
+            }
+        }
+        .links{
+            @include respond(tab){
+                display: none;
+            }
+        }
+        ul{
+            margin: 2.4em 0;
+            @include respond(tab){
+                display: none;
+            }
+            li{
+                margin-left: 4.5em;
+                list-style: none;
+                font-size: var(--subhead3-md);
+                font-weight: 400;
+                a{
+                    color: $primary-purple;
+                    font-size: 2rem;
+                }
+                a:first-child{
+                    margin-left: 0;
+                }
+            }
+        }
+    }
+    div{
+        p{
+            font-size: 1.8rem;
+        }
+        .technofevers span{
+            font-weight: 700;
+            color: $primary-pink;
+            @include respond(tab){
+                font-size: var(--logo-sm);
+                font-weight: 700;
+            }
+        }
+        .technofevers{
+            font-weight: 700;
+            color: $primary-purple;
+            @include respond(tab){
+                font-size: var(--logo-sm);
+                font-weight: 700;
+            }
+        }
+    }
+}

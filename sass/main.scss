@@ -1,0 +1,31 @@
+// Base Styles
+@import "base/reset";
+@import "base/typography";
+@import 'base/base';
+
+// Layout
+@import 'layout/header';
+// @import "layout/footer";
+// @import "layout/navigation";
+
+// Components
+@import "components/next_button.scss";
+@import "components/buttons.scss";
+@import "components/input.scss";
+@import "components/leftright.scss";
+
+// Page-specific
+@import "pages/hero";
+@import "pages/about";
+@import "pages/highlight";
+@import "pages/acheivments";
+@import "pages/what_do_we_do.scss";
+@import "pages/mission";
+@import "pages/team.scss";
+@import "pages/testimonials.scss";
+@import "pages/lastcta.scss";
+@import "pages/footer.scss";
+
+// Utilities
+@import "utils/variables";
+@import "utils/mixins";

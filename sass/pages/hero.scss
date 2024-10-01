@@ -1,0 +1,95 @@
+.hero{
+    background-image: url('../assets/images/background/background_hero.webp');
+    background-position: center;
+    padding-top: 11.1rem;
+    padding-bottom: 17.1rem ;
+    @include respond(tab){
+        padding: 7.7rem 2rem 6.1rem 2rem;
+    }
+    .herodiv{
+        color: white;
+        text-align: center;
+        @include respond(tab){
+            font-weight: 800;
+            line-height: 5rem;
+        }
+        h1{
+            font-weight: 800;
+            line-height: 6rem;
+            font-size: 4.8rem;
+            @include respond(tab){
+                font-size: 4rem;
+            }
+        }
+        p{
+            font-size: 1.8rem;
+            margin-top: 1.5rem;
+            line-height: 3rem;
+            font-weight: 600;
+            letter-spacing: .3px;
+            @include respond(tab){
+                font-size: 1.6rem;
+                margin-top: 2rem;
+                line-height: 2.6rem;
+                font-weight: 600;
+            }
+            .break{
+                @include respond(tab){
+                    display: none;
+                }
+                @include respond(desktop){
+                    display: unset;
+                }
+            }
+        }
+        .cta {
+            margin-top: 5rem;
+            justify-content: space-between;
+            @include respond(tab){
+                margin-top: 3rem;
+                flex-direction: column;
+                width: 100%;}
+            *{
+                font-size: 1.6rem;
+                border-radius: .2em;
+                box-sizing: border-box;
+            }
+            input{
+                padding: 1.6rem 1.6rem ;
+                border: 2px solid $border-color;
+                @include respond(tab){
+                    font-size: 1.5rem;
+                    width: 30rem;
+                }
+                @include respond(desktop){
+                    padding: 1.6rem 1.6rem ;
+                    border: 2px solid $border-color;
+                }
+                @include respond(wide){
+                    width: 32rem;
+                }
+            }
+            button{
+                padding: 1.8rem 3.6rem ;
+                border: none;
+                background-color: $secondary-pink;
+                color: white;
+                font-weight: 700;
+                @include respond(tab){
+                    margin-top: 1rem;
+                    font-size: 1.5rem;
+                    width: 16rem;
+                }
+                @include respond(desktop){
+                    width: 16.5rem;
+                    margin-left: 1.2rem;
+                }
+                @include respond(wide){
+                    width: 16.5rem;
+                    margin-left: 1.2rem;
+                }
+            }
+        }
+        
+    }
+}

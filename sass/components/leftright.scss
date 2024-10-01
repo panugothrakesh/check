@@ -1,0 +1,19 @@
+.leftright{
+    margin: -10rem 1rem 0 12rem;
+    display: unset;
+    visibility: visible;
+    cursor: pointer;
+    position: absolute;
+    padding: 0 0rem 0 2rem;
+    right: 0;
+    font-size: 2.2rem;
+    color: var(--primary-color);
+    border: none;
+    background-color: transparent;
+    img{
+        padding: 0 2rem;
+    }
+    @include respond(tab){
+        margin: -16rem 1rem 0 12rem;
+    }
+}

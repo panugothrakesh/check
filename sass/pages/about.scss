@@ -1,0 +1,131 @@
+.aboutus{
+    @include respond(tab){
+        padding: 5rem 0 0rem 0;
+    }
+    @include respond(wide){
+        padding: 3.6rem 0;
+    }
+    .aboutcontainer{
+        @include respond(tab){
+            background-color: white;
+            transform: translateY(-6rem);
+            padding: 4rem 2rem 2.6rem 2rem;
+            box-shadow: 0px 10px 15px 0px rgba(126, 97, 97, 0.25);
+        }
+        @include respond(desktop){
+            background-color: white;
+        transform: translateY(-6rem);
+        padding: 4rem 3rem 6.5rem 3rem;
+        box-shadow: 0px 10px 15px 0px rgba(126, 97, 97, 0.25);
+        }
+        @include respond(wide){
+            background-color: white;
+        transform: translateY(-9.6rem);
+        margin: 0 24rem;
+        padding: 3rem 5rem 7rem 5rem;
+        box-shadow: 0px 10px 15px 0px rgba(126, 97, 97, 0.25);
+        }
+        h1{
+            font-size: 4.8rem;
+            font-weight: 400;
+            color: $primary-purple;
+            position: relative;
+            @include respond(tab){
+                font-size: 3rem;
+                font-weight: 400;
+                color: $primary-purple;
+                position: relative;
+            }
+        }
+        h1::before{
+            content: "";
+            position: absolute;
+            background-color: $secondary-pink;
+            height: .2rem;
+            width: 60%;
+            left: 1em;
+            bottom: -.3em;
+            @include respond(tab){
+                content: "";
+                position: absolute;
+                background-color: $secondary-pink;
+                height: .2rem;
+                width: 60%;
+                left: 1em;
+                bottom: -.3em;
+            }
+        }
+        p{
+            font-size: 1.8rem;
+            margin: 5.6rem;
+            color: $neutral-gray;
+            text-align: center;
+            width: 80%;
+            line-height: 2.93rem;
+            @include respond(tab){
+                width: 100%;
+                margin-top: 6.4rem;
+                font-size: 1.6rem;
+                line-height: 2.6rem;
+            }
+        }
+        .linerel{
+            display: flex;
+            visibility: visible;
+            margin-top: -1.4rem;
+            width: 100%;
+            position: relative;
+            @include respond(tab){
+                display: none;
+            }
+            @include respond(desktop){
+                display: flex;
+                visibility: visible;
+            }
+            hr{
+                width: 100%;
+                border: .5px solid black;
+                position: absolute;
+            }
+            .circles{
+                width: 100%;
+                justify-content: space-between;
+                padding: 0 7.7rem;
+                div{
+                    height: 5rem;
+                    width: 5rem;
+                    border-radius: 5rem;
+                    background-color: white;
+                    border: .5px solid black;
+                    z-index: 5;
+                }
+            }
+        }
+        .bottomcap{
+            @include respond(tab){
+                display: none;
+            }
+            @include respond(desktop){
+                display: flex;
+                visibility: visible;
+                margin-top: 1.2rem;
+                width: 90%;
+                justify-content: space-between;
+                margin-left: 5rem;
+            }
+            @include respond(wide){
+                display: flex;
+                visibility: visible;
+                margin-top: 1.2rem;
+                width: 88%;
+                justify-content: space-between;
+                margin-left: 5rem;
+            }
+            li{
+                list-style-type: none;
+                color: $neutral-gray;
+                font-size: 1.8rem;
+            }
+        }
+    }
+}

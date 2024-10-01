@@ -1,0 +1,66 @@
+.acheivments {
+    @include respond(tab){
+        transform: translateY(-9rem);
+        background-color: $primary-pink;
+        padding: 12rem 0rem;
+    }
+    @include respond(desktop){
+        transform: translateY(-11rem);
+        background-color: $primary-pink;
+        padding: 13.7rem 0;
+    }
+    @include respond(wide){
+        transform: translateY(-7.5rem);
+        background-color: $primary-pink;
+        padding: 15.2rem 26rem 9rem 26rem;
+    }
+    *{
+        color: white;
+        text-align: center;
+    }
+    h2{
+        font-size: 4rem;
+        font-weight: 700;
+        @include respond(tab){
+            font-size: 3rem;
+            margin-top: .2rem;
+            font-weight: 700;
+        }
+    }
+    p{
+        font-size: 1.8rem;
+        line-height: 2.93rem;
+        margin-top: 1.7rem;
+        @include respond(tab){
+            font-size: 1.6rem;
+            line-height: 2.6rem;
+            margin-top: 2rem;
+            width: 80%;
+        }
+    }
+    .metrics{
+        width: 100%;
+        display: grid;
+        margin-top: 2.7rem;
+        grid-template-columns: repeat(4, 1fr);
+        @include respond(tab){
+            grid-template-rows: repeat(2, 1fr);
+            grid-template-columns: repeat(2, 1fr);
+            row-gap: 5.5rem;
+        }
+        div{
+            h2{
+                font-weight: 700;
+                @include respond(tab){
+                    font-weight: 700;
+                    font-size: 4rem;
+                }
+            }
+            p{
+                font-size: 1.4rem;
+                margin-top: -.4rem;
+            }
+        }
+        
+    }
+}
